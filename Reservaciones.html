@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservaciones</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    
+    <body>
+         <nav class="titulo">
+             <header><h1>Reservaciones</h1></header>
+            <ul>
+                <li><a href="Index.html">Pagina Principal</a></li>
+                <li><a href="Destinos.html">Destinos Que Ofrecemos</a></li>
+                <li><a href="Cultura.html">Cultura e Identidad nacional</a></li>
+                <li><a href="Reservaciones.html">Reservaciones</a></li>
+                <li><a href="Contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <main class="formulario">
+            <h3>Realiza tu reservacion aqui</h3>
+        <form method="POST", enctype="multipart/form-data">
+            <fieldset class="formulario">
+            <legend><h2>Ingresa tus datos personales</h2></legend>
+            <div>
+                <label>Ingresa tu nombre: </label>
+                <input type="text" id="Nombre Completo" name="Nombre" required minlength="6", maxlength="80" placeholder="Ingresa tu nombre completo">
+            </div>
+            <br>
+            <div>
+                <label>Ingresa tu Apellido: </label>
+                <input type="Text" id="Apellido" name="Apellido" required minlength="6" maxlength="60" placeholder="Ingresa tu apellido completo">
+            </div>
+            <br>
+            <div>
+                <label>Ingresa tu numero de telefono: </label>
+                <input type="text", id="numero de telefono" name="Numero de telefono" required pattern="[0-9]{4}-[0-9]{4}" placeholder="9999-9999">
+            </div>
+            <br>
+            <div>
+                <label>Ingresa tu Correo Electronico: </label>
+                <input type="text" id="Correo" name="correo" placeholder="ejemplo@correo.com">
+            </div>
+            <br>
+            <div>
+                <label>Selecciona tu lugar de destino deseado</label>
+                <select id="Lugar de destino" name="Lugar destino" required>
+                    <option value="Ruta Maya">Ruta Maya</option>
+                    <option value="Pueblos encantadores">Pueblos Encantadores</option>
+                    <option value="Ecoturismo">Ecoturismo</option>
+                    <option value="Caribe y arrecifes">Caribe y Arrecifes</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Selecciona Fecha de partida</label>
+                <input type="date" id="fecha-intro" name="fecha-intro" min="2026-10-03">
+            </div>
+            <br>
+            <div>
+                <label>Selecciona Fecha de regreso</label>
+                <input type="date" id="fecha-regreso" name="fecha-regreso" min="2026-10-03">
+            </div>
+            <br>
+            <div>
+                <label>Selecciona numero de viajeros adultos: </label>
+                <input type="number" id="viajeros" name="viajeros", max="20" placeholder="Ingresa cantidad viajeros adultos">
+            </div>
+            <br>
+            <div>
+                <label>Selecciona numero de viajeros menores: </label>
+                <input type="number" id="viajerosmin" name="viajerosmin", max="20" placeholder="Ingresa cantidad viajeros adultos">
+            </div>
+            <br>
+            <div>
+                <label>Seleccione tipo de Hospedaje</label>
+                <select id="Hospedaje" name="Hospedaje" required>
+                    <option value="Cabaña ecologica">Cabaña Ecologica</option>
+                    <option value="Hotel Colonial">Hotel Colonial</option>
+                    <option value="Campamento de Montaña">Campamento de Montaña</option>
+                    <option value="Resort costero">Resort Costero</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Necesidades Extras:</label>
+                <input type="text" id="Necesidades" name="Necesidades" placeholder="Necesidades Extras ">
+            </div>
+            <br>
+            <div>
+                <label>Estas de acuerdo con la proteccion medioambiental del pais y a proteger la flora y la fauna?</label>
+                <label><input type="checkbox" name="si" values="si"><Strong>SI</Strong> </label>
+                 <label><input type="checkbox" name="no" values="no"><Strong>NO</Strong> </label>
+            </div>
+            <br>
+            <div>
+                <button type="button">Enviar Informacion</button>
+            </div>
+        </fieldset>
+        </form>
+        </main>
+        
+    </body>
+
+</html>
